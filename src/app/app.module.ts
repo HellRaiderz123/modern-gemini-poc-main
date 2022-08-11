@@ -12,6 +12,7 @@ import { ComponentRolesComponent } from './component-roles/component-roles.compo
 import { ComponenetCardsComponent } from './componenet-cards/componenet-cards.component';
 import { ComponenetNewsComponent } from './componenet-news/componenet-news.component';
 import { ComponentRecentComponent } from './component-recent/component-recent.component';
+import { ComponentMainComponent } from './component-main/component-main.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ComponentRecentComponent } from './component-recent/component-recent.co
     ComponentRolesComponent,
     ComponenetCardsComponent,
     ComponenetNewsComponent,
-    ComponentRecentComponent
+    ComponentRecentComponent,
+    ComponentMainComponent
   ],
   imports: [
     BrowserModule,
