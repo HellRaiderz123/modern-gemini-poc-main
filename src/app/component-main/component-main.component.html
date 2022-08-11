@@ -1,31 +1,86 @@
-<div class="d-flex container">
+<div class="d-flex container-fluid" style="min-height: 100%;">
     <!-- Side Bar-->
     <app-compoenent-sidebar></app-compoenent-sidebar>
+    <div class="border-dark border py-1 rounded"
+        style="background-color: #F1F2F6; z-index: 0; visibility: hidden; height: 30%; min-width: 30%; margin-left: 2px;"
+        #sideSideBar>
+        <div class="row">
+            <div class="col-lg-5 justify-content-start border-end border-dark">
+                <span class="text-primary">
+                    <h2 class="m-2">Product</h2>
+                </span><br>
+                <span class="text-dark m-2"><u><b>Frequently Viewed</b></u></span><br>
+                <span class="text-dark m-2"><u><b>Favourite</b></u></span><br>
+                <span class="text-dark m-2"><u><b>Entitlement</b></u></span><br>
+                <span class="text-dark m-2"><u><b>Entitlement</b></u></span><br>
+                <span class="text-dark m-2"><u><b>Entitlement</b></u></span>
+            </div>
+            <div class="col-lg-7 justify-content-end">
+
+                <div class="row">
+                    <div class="card" style="max-width: 40%; margin: 2%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Entitlement</h5>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 40%; margin: 2%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Setup Mos</h5>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 40%; margin: 2%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Setup Price</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- Dashboards -->
-    <div class="row" style="min-width: 96%;">
+    <div class="row" style="min-width: 97.5%; z-index: -1; position: absolute; margin-left: 2%;">
         <div class="col-lg-8 col-md-7 justify-content-start" id="dashboard-div">
-            <div class="row">
-                
-                <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="row m-2">
+                <div class="col-lg-4">
                     <app-componenet-cards></app-componenet-cards>
                 </div>
-               
+                <div class="col-lg-4">
+                    <app-componenet-cards></app-componenet-cards>
+                </div>
+                <div class="col-lg-4">
+                    <app-componenet-cards></app-componenet-cards>
+                </div>
+                <div class="col-lg-4">
+                    <app-componenet-cards></app-componenet-cards>
+                </div>
+                <div class="col-lg-4">
+                    <app-componenet-cards></app-componenet-cards>
+                </div>
+                <div class="col-lg-4">
+                    <app-componenet-cards></app-componenet-cards>
+                </div>
+                <div class="col-lg-4">
+                    <app-componenet-cards></app-componenet-cards>
+                </div>
             </div>
         </div>
         <div class="col-lg-1 col-md-1">
             <!--Filter Icon -->
-            <a href="#" class="nav-link py-1" title="" data-bs-toggle="tooltip" data-bs-placement="right"
-                    data-bs-original-title="Dashboard">
-                    <span class="input-group-text" style="border: 0px solid black; background-color: inherit; position: relative;" id="basic-addon1">
-                        <i class="bi bi-funnel-fill"></i>
-                    </span>
-                </a>
+            <a href="#" class="nav-link py-1" role="button" data-bs-original-title="Dashboard">
+                <span class="input-group-text"
+                    style="border: 0px solid black; background-color: inherit; position: relative;" id="basic-addon1">
+                    <img src="../../assets/images/icons8-filter-48.png" alt="Bootstrap" width="32" height="32">
+                </span>
+            </a>
         </div>
-        <div class="col-lg-3 col-md-4 sol-sm-12 justify-content-end">
-            <div class="" style="border: 1px black solid; padding: 10px; min-height: 25%; max-height: 30%;overflow-y: auto;">
+        <div class="col-lg-3 col-md-4 sol-sm-12">
+            <div class=""
+                style="border: 1px black solid; padding: 10px; min-height: 25%; max-height: 30%;overflow-y: auto;">
                 <app-component-recent></app-component-recent>
             </div>
-            <div class="" style="border: 1px black solid; margin-top: 10px; padding: 10px; min-height: 50%;max-height: 50%; overflow-y: auto;">
+            <div class=""
+                style="border: 1px black solid; margin-top: 10px; padding: 10px; min-height: 50%;max-height: 50%; overflow-y: auto;">
                 <app-componenet-news></app-componenet-news>
             </div>
         </div>

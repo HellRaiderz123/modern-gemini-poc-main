@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-component-main',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./component-main.component.css']
 })
 export class ComponentMainComponent implements OnInit {
+  
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

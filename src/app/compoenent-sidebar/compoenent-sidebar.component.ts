@@ -12,4 +12,8 @@ export class CompoenentSidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sidepopup() {
+
+  }
+
 }
