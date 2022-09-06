@@ -13,6 +13,9 @@ import { ComponenetCardsComponent } from './componenet-cards/componenet-cards.co
 import { ComponenetNewsComponent } from './componenet-news/componenet-news.component';
 import { ComponentRecentComponent } from './component-recent/component-recent.component';
 import { ComponentMainComponent } from './component-main/component-main.component';
+import { ComponentDashboardComponent } from './component-dashboard/component-dashboard.component';
+import { ComponentUiErrorComponent } from './component-ui-error/component-ui-error.component';
+import { ScreenCaprevbybidComponent } from './screen-caprevbybid/screen-caprevbybid.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { ComponentMainComponent } from './component-main/component-main.componen
     ComponenetCardsComponent,
     ComponenetNewsComponent,
     ComponentRecentComponent,
-    ComponentMainComponent
+    ComponentMainComponent,
+    ComponentDashboardComponent,
+    ComponentUiErrorComponent,
+    ScreenCaprevbybidComponent
   ],
   imports: [
     BrowserModule,

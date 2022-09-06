@@ -1,10 +1,13 @@
 <div class="d-flex container-fluid" style="min-height: 100%;">
     <!-- Side Bar-->
     <app-compoenent-sidebar></app-compoenent-sidebar>
+                            <!-- sub menu 
     <div class="border-dark border py-1 rounded"
         style="background-color: #F1F2F6; z-index: 0; visibility: hidden; height: 30%; min-width: 30%; margin-left: 2px;"
         #sideSideBar>
+        
         <div class="row">
+
             <div class="col-lg-5 justify-content-start border-end border-dark">
                 <span class="text-primary">
                     <h2 class="m-2">Product</h2>
@@ -36,34 +39,14 @@
                 </div>
 
             </div>
-        </div>
-    </div>
+         
+        </div>   
+    </div>-->
     <!-- Dashboards -->
-    <div class="row" style="min-width: 97.5%; z-index: -1; position: absolute; margin-left: 2%;">
+    <div class="row" style="min-width: 97.5%;position: absolute; margin-left: 2%;">
         <div class="col-lg-8 col-md-7 justify-content-start" id="dashboard-div">
-            <div class="row m-2">
-                <div class="col-lg-4">
-                    <app-componenet-cards></app-componenet-cards>
-                </div>
-                <div class="col-lg-4">
-                    <app-componenet-cards></app-componenet-cards>
-                </div>
-                <div class="col-lg-4">
-                    <app-componenet-cards></app-componenet-cards>
-                </div>
-                <div class="col-lg-4">
-                    <app-componenet-cards></app-componenet-cards>
-                </div>
-                <div class="col-lg-4">
-                    <app-componenet-cards></app-componenet-cards>
-                </div>
-                <div class="col-lg-4">
-                    <app-componenet-cards></app-componenet-cards>
-                </div>
-                <div class="col-lg-4">
-                    <app-componenet-cards></app-componenet-cards>
-                </div>
-            </div>
+            <!-- Router will be added to move this no different different pages -->
+            <router-outlet></router-outlet>
         </div>
         <div class="col-lg-1 col-md-1">
             <!--Filter Icon -->

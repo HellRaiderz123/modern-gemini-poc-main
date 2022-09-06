@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-component-main',
@@ -8,7 +9,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class ComponentMainComponent implements OnInit {
   
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
     
